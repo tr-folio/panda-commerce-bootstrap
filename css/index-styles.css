@@ -1,0 +1,14 @@
+ /* ---------------------------
+    Common Styles 
+---------------------------*/
+.panda-btn-buy-now {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30px;
+    color: white;
+    background-color: deeppink;
+}
+
+.categories img {
+    width: 100px;
+}

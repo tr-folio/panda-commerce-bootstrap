@@ -1,0 +1,17 @@
+/* 
+ * Override Bootstrap Styles 
+ * This is not recommended
+ */
+
+ /* ---------------------------
+    Background Styles 
+---------------------------*/
+/* override .bg-info */
+/* .bg-info {
+    background-color: lightpink !important;
+} */
+
+/* my background class not override bootstrap */
+.panda-bg-info {
+    background-color: #feeae9;
+}

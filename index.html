@@ -7,11 +7,15 @@
     <title>Panda Commerce Bootstrap</title>
     <!-- Link Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Override Bootstrap Styles -->
+    <link rel="stylesheet" href="css/override-bootstrap-styles.css">
+    <!-- Link index-styles.css -->
+    <link rel="stylesheet" href="css/index-styles.css">
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="">
@@ -26,13 +30,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
                         </li>
                     </ul>
                 </div>
@@ -43,12 +47,12 @@
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="row bg-info bg-gradient d-flex align-items-center p-5">
+                        <div class="row panda-bg-info bg-gradient d-flex align-items-center p-5">
                             <div class="col-lg-7">
                                 <h1>Cool Dude Headphone</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsa, officia rem dicta rerum aliquam!</p>
                                 <h1>$420</h1>
-                                <button class="btn btn-warning">Buy Now</button>
+                                <button class="panda-btn-buy-now">Buy Now</button>
                             </div>
                             <div class="col-lg-5">
                                 <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
@@ -56,12 +60,12 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="row bg-info bg-gradient d-flex align-items-center p-5">
+                        <div class="row panda-bg-info bg-gradient d-flex align-items-center p-5">
                             <div class="col-lg-7">
                                 <h1>Mega LCD TV for Sports</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsa, officia rem dicta rerum aliquam!</p>
                                 <h1>$1289</h1>
-                                <button class="btn btn-warning">Buy Now</button>
+                                <button class="panda-btn-buy-now">Buy Now</button>
                             </div>
                             <div class="col-lg-5">
                                 <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
@@ -69,12 +73,12 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="row bg-info bg-gradient d-flex align-items-center p-5">
+                        <div class="row panda-bg-info bg-gradient d-flex align-items-center p-5">
                             <div class="col-lg-7">
                                 <h1>Xbox for living room</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsa, officia rem dicta rerum aliquam!</p>
                                 <h1>$600</h1>
-                                <button class="btn btn-warning">Buy Now</button>
+                                <button class="panda-btn-buy-now">Buy Now</button>
                             </div>
                             <div class="col-lg-5">
                                 <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
@@ -97,7 +101,7 @@
     <!-- Main Section -->
     <main>
         <!-- Categories Container -->
-        <section class="container my-5">
+        <section class="container my-5 categories">
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
                     <div class="p-3 border bg-warning d-flex align-items-center justify-content-between rounded-3">
@@ -121,7 +125,7 @@
         </section>
 
         <!-- Shoes Section -->
-        <section class="container">
+        <section class="container" id="shoes">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -133,7 +137,7 @@
                                 content. This content is a little bit longer.</p>
                         </div>
                         <div class="card-footer">
-                            <div class="btn btn btn-warning">Buy Now</div>
+                            <div class="btn panda-btn-buy-now">Buy Now</div>
                         </div>
                     </div>
                 </div>
@@ -145,7 +149,7 @@
                             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
                         </div>
                         <div class="card-footer">
-                            <div class="btn btn btn-warning">Buy Now</div>
+                            <div class="btn panda-btn-buy-now">Buy Now</div>
                         </div>
                     </div>
                 </div>
@@ -158,7 +162,7 @@
                                 content. This card has even longer content than the first to show that equal height action.</p>
                         </div>
                         <div class="card-footer">
-                            <button class="btn btn-warning">Buy Now</button>
+                            <button class="panda-btn-buy-now">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -166,7 +170,7 @@
         </section>
 
         <!-- Backpack Section -->
-        <section class="container">
+        <section class="container my-5" id="backpack">
             <h2>Backpack</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -179,7 +183,7 @@
                                 content. This content is a little bit longer.</p>
                         </div>
                         <div class="card-footer">
-                            <div class="btn btn btn-warning">Buy Now</div>
+                            <div class="btn panda-btn-buy-now">Buy Now</div>
                         </div>
                     </div>
                 </div>
@@ -192,7 +196,7 @@
                             </p>
                         </div>
                         <div class="card-footer">
-                            <div class="btn btn btn-warning">Buy Now</div>
+                            <div class="btn panda-btn-buy-now">Buy Now</div>
                         </div>
                     </div>
                 </div>
@@ -206,16 +210,29 @@
                                 content. This card has even longer content than the first to show that equal height action.</p>
                         </div>
                         <div class="card-footer">
-                            <button class="btn btn-warning">Buy Now</button>
+                            <button class="panda-btn-buy-now">Buy Now</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Subscribe Section -->
+        <section style="height: 300px;" class="container d-flex justify-content-center align-items-center panda-bg-info rounded-3" id="subscribe">
+            <div>
+                <h1>LET'S STAY IN TOUCH</h1>
+                <p>Get updates on sales, special and more</p>
+                <p>
+                    <input class="form-control" type="text" placeholder="Your Email">
+                    <button class="panda-btn-buy-now">Submit</button>
+                </p>
+            </div>
+        </section>
     </main>
 
     <!-- Footer Section -->
-    <footer></footer>
+    <footer class="mt-5 text-center">
+        <p><small>@2020. Panda Commerce. All rights reserved. Soha, Bulgeria.</small></p>
+    </footer>
 
     <!-- Link Bootstrap JS -->
     <script src="js/bootstrap.bundle.min.js"></script>
